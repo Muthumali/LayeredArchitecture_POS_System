@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminContext" prefHeight="708.0" prefWidth="1378.0" style="-fx-background-color: #223300;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
+   <children>
+      <AnchorPane layoutX="295.0" prefHeight="717.0" prefWidth="1101.0" style="-fx-background-color: #223300;">
+         <children>
+            <TextField fx:id="txtDate" disable="true" layoutX="24.0" layoutY="24.0" prefHeight="65.0" prefWidth="318.0">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtTime" disable="true" layoutX="342.0" layoutY="24.0" prefHeight="54.0" prefWidth="299.0">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="717.0" fitWidth="1109.0" layoutX="-2.0" opacity="0.63" pickOnBounds="true">
+               <image>
+                  <Image url="@assets/image/banner04.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="AdminLoadContext" layoutX="3.0" layoutY="3.0" prefHeight="710.0" prefWidth="1099.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-11.0" prefHeight="717.0" prefWidth="285.0" style="-fx-background-color: #009432;">
+         <children>
+            <ImageView fitHeight="717.0" fitWidth="306.0" layoutX="8.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assets/image/new.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="49.0" layoutY="14.0" text="Muthu Supermarket Store" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="44.0" prefHeight="4.0" prefWidth="288.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/image/492851_admin_256x256.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="90.0" layoutY="208.0" text="Admin DashBoard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="11.0" layoutY="241.0" prefHeight="4.0" prefWidth="295.0" />
+            <Separator layoutX="9.0" layoutY="204.0" prefHeight="4.0" prefWidth="295.0" />
+            <JFXButton buttonType="RAISED" layoutX="40.0" layoutY="265.0" onAction="#ManageItemOnAction" prefHeight="39.0" prefWidth="234.0" style="-fx-background-color: #3e8027; -fx-background-radius: 50;" text="Manage Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="320.0" onAction="#SystemReportOnAction" prefHeight="39.0" prefWidth="234.0" style="-fx-background-color: #3e8027; -fx-background-radius: 50;" text="System Reports" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="71.0" layoutY="605.0" onAction="#LogoutOnAction" prefHeight="39.0" prefWidth="170.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="29.0" layoutY="673.0" text="Version 1.0.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
